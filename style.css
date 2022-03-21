@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "TT Lakes Bold"; /* РРјСЏ С€СЂРёС„С‚Р° */
+   src: url(/assets/fonts/TTLakesCondensed-Bold.woff); /* РџСѓС‚СЊ Рє С„Р°Р№Р»Сѓ СЃРѕ С€СЂРёС„С‚РѕРј */
+}
+@font-face {
+    font-family: "TT Lakes Regular";
+    src: url(/assets/fonts/TTLakesCondensed-Regular.woff);
+}
+@font-face {
+    font-family: "TT Lakes Demibold";
+    src: url(/assets/fonts/TTLakesCondensed-DemiBold.woff);
+}
+
+body {
+    margin: 0;
+    background: #F8F8F8;
+}
+
+.brands__header {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    font-family: "TT Lakes Regular";
+    color: #7E7E82;
+    padding: 1em;
+    background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.header__title {
+    margin: 0;  
+}
+.brands__list {
+    gap: 1rem;
+    list-style-type: none;
+    padding-left: 1em;
+    
+}
+.brands__list .brands__list--slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 6px;
+}
+.brands__list--expand {
+    display: none;
+}
+.brands__list--hidden {
+    display: none;
+}
+button {
+    cursor: pointer;
+}
+@media (min-width:768px) {
+    body {
+        margin-left: .5em;
+    }
+    .brands__header {
+        padding: 1.5em;
+    }
+    .brands__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .brands__list--slider {
+        max-width: 200px;
+    }
+    .brands__list--slider:nth-child(n+7) {
+        display: none;
+    }
+    .swiper {
+        margin-top: 1em;
+    }
+    .style-button {
+        font-family: "TT Lakes Demibold";
+        display: inline;
+        margin-left: 1.5em;
+        border: none;
+        background: #F8F8F8;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: #1B1C21;
+    }
+    .brands__list--expand {
+        display: block;
+    }
+    .brands__list--expand span {
+        padding-left: 1em;
+    }
+
+    .brands__list--hidden span {
+        margin-left: 1em;
+    }
+}
+@media (min-width:1120px) {
+    .brands__list--slider:nth-child(n+5) {
+        display: none;
+    }
+}
