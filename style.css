@@ -1,14 +1,14 @@
 @font-face {
     font-family: "TT Lakes Bold"; /* РРјСЏ С€СЂРёС„С‚Р° */
-   src: url(/assets/fonts/TTLakesCondensed-Bold.woff); /* РџСѓС‚СЊ Рє С„Р°Р№Р»Сѓ СЃРѕ С€СЂРёС„С‚РѕРј */
+   src: url(assets/fonts/TTLakesCondensed-Bold.woff); /* РџСѓС‚СЊ Рє С„Р°Р№Р»Сѓ СЃРѕ С€СЂРёС„С‚РѕРј */
 }
 @font-face {
     font-family: "TT Lakes Regular";
-    src: url(/assets/fonts/TTLakesCondensed-Regular.woff);
+    src: url(assets/fonts/TTLakesCondensed-Regular.woff);
 }
 @font-face {
     font-family: "TT Lakes Demibold";
-    src: url(/assets/fonts/TTLakesCondensed-DemiBold.woff);
+    src: url(assets/fonts/TTLakesCondensed-DemiBold.woff);
 }
 
 body {
