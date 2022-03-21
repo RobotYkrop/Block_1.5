@@ -35,13 +35,13 @@ if(mobile.matches) {
 })}}
 // Disable (for tablet)
 else if(tablet.matches) {
-    swiper.destroy();
+    swiper.destroy
     init = false;
 }
 
 // Disable (for desktop)
 else if(desktop.matches) {
-    swiper.destroy();
+    swiper.destroy
     init = false;
 }
 }
