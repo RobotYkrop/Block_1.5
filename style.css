@@ -38,12 +38,9 @@ body {
 }
 .brands__list .brands__list--slider {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     background: #FFFFFF;
     border: 1px solid #EAEAEA;
     padding: 1em;
-    margin-bottom: 1em;
     border-radius: 6px;
 }
 .brands__list--expand {
@@ -52,8 +49,13 @@ body {
 .brands__list--hidden {
     display: none;
 }
-button {
+.brands__list--slider button{
     cursor: pointer;
+    border: none;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 @media (min-width:768px) {
     body {

@@ -1,6 +1,6 @@
 const open = document.querySelector('.brands__list--expand');
 const close = document.querySelector('.brands__list--hidden');
-let slider = document.querySelectorAll('.brands__list--slider:nth-child(n+7)');
+const slider = [...document.querySelectorAll('.brands__list--slider:nth-child(n+7)')];
 
     close.addEventListener('click', () => {
         for(let i = 0; i < slider.length; i++){
@@ -17,3 +17,4 @@ let slider = document.querySelectorAll('.brands__list--slider:nth-child(n+7)');
             open.style.display='none'
         }
     });
+    document.addEventListener("DOMContentLoaded", ready);
