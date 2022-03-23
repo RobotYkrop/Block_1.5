@@ -1,20 +1,18 @@
 const open = document.querySelector('.brands__list--expand');
 const close = document.querySelector('.brands__list--hidden');
 const slider = [...document.querySelectorAll('.brands__list--slider:nth-child(n+7)')];
-
-    close.addEventListener('click', () => {
-        for(let i = 0; i < slider.length; i++){
-            slider[i].style.display='none'; 
-            open.style.display='block'
-            close.style.display='none'
-        }
-    });
-
-    open.addEventListener('click', function () {
-        for(let i = 0; i < slider.length; i++){
-            slider[i].style.display='flex';
-            close.style.display='block'
-            open.style.display='none'
-        }
-    });
-    document.addEventListener("DOMContentLoaded", ready);
+    
+            function toggleModal() {
+                slider.forEach(slider => {
+                    open.addEventListener('click', () => {
+                        slider.style.display = 'flex';
+                        open.style.display = 'none';
+                        close.style.display='block';
+                    })
+                    close.addEventListener('click', () => {
+                        slider.style.display = 'none';
+                        open.style.display = 'block';
+                        close.style.display = 'none';
+                    })
+                })
+            }

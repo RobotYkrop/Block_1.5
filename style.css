@@ -38,10 +38,6 @@ body {
 }
 .brands__list .brands__list--slider {
     display: flex;
-    background: #FFFFFF;
-    border: 1px solid #EAEAEA;
-    padding: 1em;
-    border-radius: 6px;
 }
 .brands__list--expand {
     display: none;
@@ -49,13 +45,23 @@ body {
 .brands__list--hidden {
     display: none;
 }
+
 .brands__list--slider button{
     cursor: pointer;
-    border: none;
+    border: 1px solid #EAEAEA;
+    padding: 1em;
+    border-radius: 6px;
     background-color: white;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    flex: auto;
+}
+.brands__list--slider button svg:last-child {
+    margin-left: auto;
+}
+
+.brands__list {
+    padding-bottom: 1em;
 }
 @media (min-width:768px) {
     body {
