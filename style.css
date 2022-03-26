@@ -84,7 +84,7 @@ body {
         margin-top: 1em;
     }
     .style-button {
-        font-family: "TT Lakes Demibold";
+        font-family: "TT Lakes Demibold", sans-serif;
         display: inline;
         margin-left: 1.5em;
         border: none;
